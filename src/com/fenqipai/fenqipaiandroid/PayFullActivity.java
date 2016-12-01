@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -148,7 +149,7 @@ public class PayFullActivity extends BaseActivity {
 
 	/**
 	 * 初始化组件
-	 * 
+	 *
 	 * @author hunaixin
 	 */
 	private void initView() {
@@ -169,7 +170,7 @@ public class PayFullActivity extends BaseActivity {
 
 	/**
 	 * 初始化组件
-	 * 
+	 *
 	 * @author hunaixin
 	 */
 	private void initEvent() {
@@ -264,9 +265,9 @@ public class PayFullActivity extends BaseActivity {
 			if (type.equals("UnionPay")) {// 银联
 				payMobileCreate(payId, "UnionPay");// 是否是需要的
 			} else if (type.equals("AliPay")) {// 支付宝
-
-				AlipayOperator alipayOperator = new AlipayOperator(PayFullActivity.this, mHandler, price, payId);
-				alipayOperator.pay();
+				payMobileCreate(payId, "AliPay");
+//				AlipayOperator alipayOperator = new AlipayOperator(PayFullActivity.this, mHandler, price, payId);
+//				alipayOperator.pay();
 
 			} else if (type.equals("WePay")) {// 微信
 
@@ -324,15 +325,15 @@ public class PayFullActivity extends BaseActivity {
 
 	/**
 	 * 银联支付 tn
-	 * 
-	 * @author hunaixin 
+	 *
+	 * @author hunaixin
 	 * @param  orderId - 订单Id loanId - 分期业务Id loanAlgorithmId - 分期期限Id
 	 *         repaymentIdArray[] - 分期期限Id数组 actionType - 支付单类型:fullAmount全款,
 	 *         downPayment 首付, staging 分期
 	 * @return resultMessage
 	 */
 	public void createPay(final String orderId, final String actionType, final String repaymentIdArray,
-			final String loanId, final String loanAlgorithmId, final String type) {
+						  final String loanId, final String loanAlgorithmId, final String type) {
 		putAsyncTask(new AsyncTask<Void, Void, Boolean>() {
 
 			@Override
@@ -359,8 +360,10 @@ public class PayFullActivity extends BaseActivity {
 								doStartUnionPayPlugin(PayFullActivity.this, jObject.optString("tn"),
 										Contants.YINLIAN_MODE);
 							} else if (type.equals("AliPay")) {// 支付宝
+								String payNumber=jObject.optString("payNumber");
+
 								AlipayOperator alipayOperator = new AlipayOperator(PayFullActivity.this, mHandler,
-										price, payId);
+										price, payNumber);
 								alipayOperator.pay();
 
 							} else if (type.equals("WePay")) {// 微信
@@ -482,7 +485,7 @@ public class PayFullActivity extends BaseActivity {
 						}
 
 						intent.putExtra("money", price);
-						intent.putExtra("fome", "银联支付");
+						intent.putExtra("fome", "支付宝支付");
 
 						startActivity(intent);
 						finish();
@@ -523,17 +526,29 @@ public class PayFullActivity extends BaseActivity {
 				super.onPostExecute(result);
 				if (result) {
 					try {
-						JSONObject jObject = new JSONObject(resultMessage);
-						if (application.getLoginTimeOut(application, jObject.optString("code"))) {
-							JSONObject jsonObject = jObject.optJSONObject("data");
-							doStartUnionPayPlugin(PayFullActivity.this, jsonObject.optString("tn"),
-									Contants.YINLIAN_MODE);
-							ToastUtils.show(application, jObject.optString("message"), ToastUtils.TOAST_SHORT);
-						} else {
+						Log.e("", "------1111----"+resultMessage);
 
-							// startActivity(PayFailActivity.class);
-							ToastUtils.show(application, jObject.optString("message"), ToastUtils.TOAST_SHORT);
+						JSONObject jsonObject = new JSONObject(resultMessage);
+						if (application.getLoginTimeOut(application, jsonObject.optString("code"))) {
+							JSONObject jObject = jsonObject.optJSONObject("data");
+							if (type.equals("UnionPay")) {// 银联
+								doStartUnionPayPlugin(PayFullActivity.this, jObject.optString("tn"),
+										Contants.YINLIAN_MODE);
+							} else if (type.equals("AliPay")) {// 支付宝
+								String payNumber=jObject.optString("payNumber");
+
+								AlipayOperator alipayOperator = new AlipayOperator(PayFullActivity.this, mHandler,
+										price, payNumber);
+								alipayOperator.pay();
+
+							} else if (type.equals("WePay")) {// 微信
+
+							}
+						} else {
+							Toast.makeText(PayFullActivity.this, jsonObject.optString("message"), Toast.LENGTH_LONG)
+									.show();
 						}
+
 
 					} catch (JSONException e) {
 
@@ -553,32 +568,32 @@ public class PayFullActivity extends BaseActivity {
 	private Handler mHandler = new Handler() {
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
-			case SDK_PAY_FLAG: {
-				PayResult payResult = new PayResult((String) msg.obj);
+				case SDK_PAY_FLAG: {
+					PayResult payResult = new PayResult((String) msg.obj);
 
-				// 支付宝返回此次支付结果及加签，建议对支付宝签名信息拿签约时支付宝提供的公钥做验签
-				String resultStatus = payResult.getResultStatus();
-				String resultInfo = payResult.getResult();
-				@SuppressWarnings("unused")
-				String orderId = payResult.getOutTradeNumber();
-				// 判断resultStatus 为“9000”则代表支付成功，具体状态码代表含义可参考接口文档
-				if (TextUtils.equals(resultStatus, "9000")) {
-					Toast.makeText(PayFullActivity.this, R.string.pay_success, Toast.LENGTH_SHORT).show();
+					// 支付宝返回此次支付结果及加签，建议对支付宝签名信息拿签约时支付宝提供的公钥做验签
+					String resultStatus = payResult.getResultStatus();
+					String resultInfo = payResult.getResult();
+					@SuppressWarnings("unused")
+					String orderId = payResult.getOutTradeNumber();
+					// 判断resultStatus 为“9000”则代表支付成功，具体状态码代表含义可参考接口文档
+					if (TextUtils.equals(resultStatus, "9000")) {
+						Toast.makeText(PayFullActivity.this, R.string.pay_success, Toast.LENGTH_SHORT).show();
 
-					payMobileFront(payId, resultInfo, "AliPay");
-				} else {
-					// 判断resultStatus 为非“9000”则代表可能支付失败
-					if (TextUtils.equals(resultStatus, "8000")) {
-						// “8000”代表支付结果因为支付渠道原因或者系统原因还在等待支付结果确认，最终交易是否成功以服务端异步通知为准（小概率状态）
-						Toast.makeText(application, R.string.confirming_pay_result, Toast.LENGTH_SHORT).show();
-
+						payMobileFront(payId, resultInfo, "AliPay");
 					} else {
-						// 其他值就可以判断为支付失败，包括用户主动取消支付，或者系统返回的错误
-						Toast.makeText(application, R.string.pay_failed, Toast.LENGTH_SHORT).show();
+						// 判断resultStatus 为非“9000”则代表可能支付失败
+						if (TextUtils.equals(resultStatus, "8000")) {
+							// “8000”代表支付结果因为支付渠道原因或者系统原因还在等待支付结果确认，最终交易是否成功以服务端异步通知为准（小概率状态）
+							Toast.makeText(application, R.string.confirming_pay_result, Toast.LENGTH_SHORT).show();
+
+						} else {
+							// 其他值就可以判断为支付失败，包括用户主动取消支付，或者系统返回的错误
+							Toast.makeText(application, R.string.pay_failed, Toast.LENGTH_SHORT).show();
+						}
 					}
+					break;
 				}
-				break;
-			}
 			}
 		};
 	};

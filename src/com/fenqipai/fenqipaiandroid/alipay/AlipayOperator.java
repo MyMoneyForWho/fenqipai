@@ -44,7 +44,7 @@ public class AlipayOperator {
 //	}
 
 	public AlipayOperator(Context mContext, Handler mHandler, String mPrice,
-			String mOrderId) {
+						  String mOrderId) {
 		super();
 		this.mContext = mContext;
 		this.mHandler = mHandler;
@@ -54,7 +54,7 @@ public class AlipayOperator {
 
 	/**
 	 * call alipay sdk pay. 调用SDK支付
-	 * 
+	 *
 	 */
 	public void pay( ) {
 		// 订单
@@ -95,7 +95,7 @@ public class AlipayOperator {
 	}
 	/**
 	 * create the order info. 创建订单信息
-	 * 
+	 *
 	 */
 	public String getOrderInfo(String subject, String body, String price) {
 
@@ -151,7 +151,7 @@ public class AlipayOperator {
 
 	/**
 	 * get the out_trade_no for an order. 生成商户订单号，该值在商户端应保持唯一（可自定义格式规范）
-	 * 
+	 *
 	 */
 	public String getOutTradeNo() {
 		return mOrderId;
@@ -159,7 +159,7 @@ public class AlipayOperator {
 
 	/**
 	 * sign the order info. 对订单信息进行签名
-	 * 
+	 *
 	 * @param content 待签名订单信息
 	 */
 	public String sign(String content) {
@@ -168,7 +168,7 @@ public class AlipayOperator {
 
 	/**
 	 * get the sign type we use. 获取签名方式
-	 * 
+	 *
 	 */
 	public String getSignType() {
 		return "sign_type=\"RSA\"";

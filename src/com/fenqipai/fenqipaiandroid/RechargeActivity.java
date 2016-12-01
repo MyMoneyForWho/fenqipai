@@ -112,7 +112,7 @@ public class RechargeActivity extends BaseActivity {
 	/**
 	 * @Description:初始化视图
 	 * @author hunaixin
-	 * @parame 
+	 * @parame
 	 * @return
 	 */
 	private void initViews() {
@@ -132,7 +132,7 @@ public class RechargeActivity extends BaseActivity {
 	/**
 	 * @Description:初始化事件
 	 * @author hunaixin
-	 * @parame 
+	 * @parame
 	 * @return
 	 */
 	private void initEvents() {
@@ -184,13 +184,15 @@ public class RechargeActivity extends BaseActivity {
 
 				String money = moneyBtn.getText().toString();
 				try {
-				if (TextUtils.isEmpty(money)) {
-					ToastUtils.show(getApplicationContext(), "充值金额不能为空", ToastUtils.TOAST_SHORT);
-					return;
-				}else if (!isMoney(money)) {
-					ToastUtils.show(getApplicationContext(), "充值金额整百起存", ToastUtils.TOAST_SHORT);
-					return;
-				} else {
+					if (TextUtils.isEmpty(money)) {
+						ToastUtils.show(getApplicationContext(), "充值金额不能为空", ToastUtils.TOAST_SHORT);
+						return;
+					}
+//				else if (!isMoney(money)) {
+//					ToastUtils.show(getApplicationContext(), "充值金额整百起存", ToastUtils.TOAST_SHORT);
+//					return;
+//				}
+					else {
 						// 将订单号加上时间戳，保持唯一性，也是out_trade_no
 						if (flag == 1) {// 1 银联支付.
 
@@ -198,7 +200,7 @@ public class RechargeActivity extends BaseActivity {
 //							 topUp.setClickable(false);
 //							 getYlpayTn(money,"UnionPay");
 						} else if (flag == 2) {// 2 支付宝
-							 topUp.setClickable(false);
+							topUp.setClickable(false);
 							getYlpayTn(money, "AliPay");
 
 						} else if (flag == 3) {// 3微信
@@ -218,7 +220,7 @@ public class RechargeActivity extends BaseActivity {
 					ToastUtils.show(getApplicationContext(), "充值金额不正确", ToastUtils.TOAST_SHORT);
 					return;
 				}
-				}
+			}
 
 		});
 
@@ -228,40 +230,40 @@ public class RechargeActivity extends BaseActivity {
 	private Handler mHandler = new Handler() {
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
-			case SDK_PAY_FLAG: {
-				PayResult payResult = new PayResult((String) msg.obj);
+				case SDK_PAY_FLAG: {
+					PayResult payResult = new PayResult((String) msg.obj);
 
-				// 支付宝返回此次支付结果及加签，建议对支付宝签名信息拿签约时支付宝提供的公钥做验签
-				String resultStatus = payResult.getResultStatus();
-				String resultInfo = payResult.getResult();
+					// 支付宝返回此次支付结果及加签，建议对支付宝签名信息拿签约时支付宝提供的公钥做验签
+					String resultStatus = payResult.getResultStatus();
+					String resultInfo = payResult.getResult();
 //				String orderId = payResult.getOutTradeNumber();
 
-				// 判断resultStatus 为“9000”则代表支付成功，具体状态码代表含义可参考接口文档
-				if (TextUtils.equals(resultStatus, "9000")) {
-					Toast.makeText(RechargeActivity.this, R.string.pay_success, Toast.LENGTH_SHORT).show();
+					// 判断resultStatus 为“9000”则代表支付成功，具体状态码代表含义可参考接口文档
+					if (TextUtils.equals(resultStatus, "9000")) {
+						Toast.makeText(RechargeActivity.this, R.string.pay_success, Toast.LENGTH_SHORT).show();
 
-					// 支付成功后，修改订单
-					unionpayMobileFront(payId, resultInfo, "AliPay");
-
-				} else {
-					// 判断resultStatus 为非“9000”则代表可能支付失败
-					if (TextUtils.equals(resultStatus, "8000")) {
-						// “8000”代表支付结果因为支付渠道原因或者系统原因还在等待支付结果确认，最终交易是否成功以服务端异步通知为准（小概率状态）
-						Toast.makeText(application, R.string.confirming_pay_result, Toast.LENGTH_SHORT).show();
+						// 支付成功后，修改订单
+						unionpayMobileFront(payId, resultInfo, "AliPay");
 
 					} else {
-						// 其他值就可以判断为支付失败，包括用户主动取消支付，或者系统返回的错误
-						Toast.makeText(application, R.string.pay_failed, Toast.LENGTH_SHORT).show();
+						// 判断resultStatus 为非“9000”则代表可能支付失败
+						if (TextUtils.equals(resultStatus, "8000")) {
+							// “8000”代表支付结果因为支付渠道原因或者系统原因还在等待支付结果确认，最终交易是否成功以服务端异步通知为准（小概率状态）
+							Toast.makeText(application, R.string.confirming_pay_result, Toast.LENGTH_SHORT).show();
+
+						} else {
+							// 其他值就可以判断为支付失败，包括用户主动取消支付，或者系统返回的错误
+							Toast.makeText(application, R.string.pay_failed, Toast.LENGTH_SHORT).show();
+						}
 					}
+					break;
 				}
-				break;
-			}
 			}
 		};
 	};
 
 	/**
-	 * @Description:获取银联支付tn 
+	 * @Description:获取银联支付tn
 	 * @author hunaixin
 	 * @parame money, type（AliPay,UnionPay,WePay）
 	 * @return resultMessage
@@ -288,17 +290,17 @@ public class RechargeActivity extends BaseActivity {
 					try {
 						JSONObject jsonObject = new JSONObject(resultMessage);
 						JSONObject jObject = jsonObject.optJSONObject("data");
-						
+
 						if (application.getLoginTimeOut(application, jsonObject.optString("code"))) {
 							payId = jObject.optString("payId");
 							if (type.equals("UnionPay")) {// 银联
 								doStartUnionPayPlugin(RechargeActivity.this, jObject.optString("tn"),
 										Contants.YINLIAN_MODE);
 							} else if (type.equals("AliPay")) {// 支付宝
-
-									AlipayOperator alipayOperator = new AlipayOperator(RechargeActivity.this, mHandler,
-											money, payId);
-									alipayOperator.pay();
+								String payNumber=jObject.optString("payNumber");
+								AlipayOperator alipayOperator = new AlipayOperator(RechargeActivity.this, mHandler,
+										money, payNumber);
+								alipayOperator.pay();
 
 
 							} else if (type.equals("WePay")) {// 微信
@@ -396,7 +398,7 @@ public class RechargeActivity extends BaseActivity {
 	/**
 	 * @Description: UnionPay回调接口 银联 AliPay支付宝 WePay微信 
 	 * @param payId, jsonData, type
-	 * @return 
+	 * @return
 	 */
 	public void unionpayMobileFront(final String payId, final String jsonData, final String type) {
 		putAsyncTask(new AsyncTask<Void, Void, Boolean>() {
@@ -470,5 +472,5 @@ public class RechargeActivity extends BaseActivity {
 		Matcher m = p.matcher(money);
 		return m.matches();
 	}
-	
+
 }
