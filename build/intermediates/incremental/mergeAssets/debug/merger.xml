@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\studio-work-space\fenqipai\assets"><file name="data.bin" path="E:\studio-work-space\fenqipai\assets\data.bin"/></source></dataSet><dataSet config="debug"><source path="E:\studio-work-space\fenqipai\build-types\debug\assets"/></dataSet></merger>

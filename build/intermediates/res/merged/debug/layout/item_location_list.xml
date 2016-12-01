@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/location_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_24dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_15dip"
+        android:layout_marginRight="@dimen/margin_15dip"
+        android:layout_marginTop="@dimen/margin_9dip"
+        android:gravity="center_vertical"
+        android:textColor="@color/car_detials_name_text"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_24dip"
+        android:layout_marginLeft="@dimen/margin_15dip"
+        android:layout_marginRight="@dimen/margin_15dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="@string/info_phone"
+            android:gravity="center_vertical"
+            android:textColor="@color/car_detials_name_text"
+            android:textSize="@dimen/text_size_14sp" />
+        
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:autoLink="phone"
+            android:textColorLink="@color/car_text_orange"
+            android:gravity="center_vertical"
+            android:textColor="@color/car_detials_name_text"
+            android:textSize="@dimen/text_size_14sp" />
+    </LinearLayout>
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_24dip"
+        android:layout_marginLeft="@dimen/margin_15dip"
+        android:layout_marginRight="@dimen/margin_15dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="@string/info_addr"
+            android:gravity="center_vertical"
+            android:textColor="@color/car_detials_name_text"
+            android:textSize="@dimen/text_size_14sp" />
+        
+        <TextView
+            android:id="@+id/location_addr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/car_detials_name_text"
+            android:textSize="@dimen/text_size_14sp" />
+    </LinearLayout>
+</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/item_location_list.xml -->

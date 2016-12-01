@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:orientation="vertical">
+    
+    <com.fenqipai.fenqipaiandroid.view.TitleBarView
+        android:id="@+id/car_params_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.fenqipai.fenqipaiandroid.view.TitleBarView>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/car_params_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/web_not_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white_color" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/web_not_found" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_98dip"
+                android:background="@color/web_not_found" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="抱歉，您访问的网页不存在。。。"
+                    android:textColor="@color/car_detials_price_et" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>
+<!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_car_params.xml -->

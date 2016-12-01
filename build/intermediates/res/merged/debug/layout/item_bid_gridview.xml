@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/price"
+    android:layout_width="@dimen/margin_52dip"
+    android:layout_height="@dimen/margin_34dip"
+    android:background="@color/car_text_orange"
+    android:gravity="center"
+    android:paddingTop="@dimen/margin_6dip"
+    android:paddingBottom="@dimen/margin_6dip"
+    android:paddingLeft="@dimen/margin_12dip"
+    android:paddingRight="@dimen/margin_12dip"
+    android:layout_margin="@dimen/margin_16dip"
+    android:textColor="@color/white_color"
+    android:textSize="@dimen/text_size_14sp"
+    android:text="1000"/>
+<!-- From: file:/E:/studio-work-space/fenqipai/res/layout/item_bid_gridview.xml -->

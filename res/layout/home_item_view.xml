@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jinri_item_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_selector"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/jinri_item_title"
+        style="@style/MarginStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_padding_big"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/jinri_item_content"
+        style="@style/MarginStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_3dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="3"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/label_size" />
+
+    <com.fenqipai.fenqipaiandroid.view.MyGridView
+        android:id="@+id/jinri_item_picture"
+        style="@style/MarginStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:columnWidth="@dimen/grid_item_height"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/text_padding"
+        android:listSelector="@drawable/layout_selector"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/text_padding"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        style="@style/MarginStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/text_padding_big"
+        android:layout_marginTop="@dimen/margin_3dip" >
+
+        <TextView
+            android:id="@+id/jinri_item_user"
+            android:layout_width="@dimen/user_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/user_color"
+            android:textSize="@dimen/label_size" />
+
+        <TextView
+            android:id="@+id/jinri_item_time"
+            style="@style/MarginStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/jinri_item_user"
+            android:layout_toRightOf="@+id/jinri_item_user"
+            android:gravity="center_vertical"
+            android:textColor="@color/hint_color"
+            android:textSize="@dimen/label_size" />
+
+        <TextView
+            android:id="@+id/jinri_item_del"
+            style="@style/MarginStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/jinri_item_time"
+            android:layout_toRightOf="@+id/jinri_item_time"
+            android:gravity="center_vertical"
+            android:text="@string/delete"
+            android:textColor="@color/user_color"
+            android:textSize="@dimen/label_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/jinri_item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/hint_color"
+            android:textSize="@dimen/label_size" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/weixin_login_rel"
+    android:layout_height="match_parent"
+     >
+
+</RelativeLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_elves.xml -->

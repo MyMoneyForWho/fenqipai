@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="@dimen/margin_30dip"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/bank_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/margin_1dip"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/popupwindows_withdraw_bank.xml -->

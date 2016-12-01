@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_rela"
+    android:layout_width="@dimen/margin_300dip"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_fragment_chamfer"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/head_img"
+                android:textColor="@color/car_detials_name_text"
+                android:textSize="@dimen/text_size_18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dip"
+            android:layout_marginLeft="@dimen/margin_5dip"
+            android:layout_marginRight="@dimen/margin_5dip"
+            android:background="@color/car_text_orange" />
+
+        <LinearLayout
+            android:id="@+id/auth_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip"
+            android:background="@drawable/layout_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_15dip"
+                android:layout_marginRight="@dimen/margin_15dip"
+                android:text="@string/auth_photo"
+                android:textColor="@color/car_details_text_grey"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip"
+            android:background="@color/my_item_background_color" />
+
+        <LinearLayout
+            android:id="@+id/checkPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip"
+            android:background="@drawable/layout_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_15dip"
+                android:layout_marginRight="@dimen/margin_15dip"
+                android:text="@string/auth_local_photo"
+                android:textColor="@color/car_details_text_grey"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

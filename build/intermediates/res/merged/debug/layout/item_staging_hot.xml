@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10dip"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_fragment_chamfer"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_191dip"
+            android:layout_marginLeft="@dimen/margin_0.1dip"
+            android:layout_marginRight="@dimen/margin_0.1dip" >
+
+            <com.fenqipai.fenqipaiandroid.view.RoundedImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:riv_border_color="@color/border"
+                app:riv_corner_radius_top_left="@dimen/margin_5dip"
+                app:riv_corner_radius_top_right="@dimen/margin_5dip" />
+
+            <ImageView
+                android:id="@+id/carstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_new_car" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_10dip"
+                android:src="@drawable/icon_sanjiao_up" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_0.1dip"
+            android:layout_marginLeft="@dimen/margin_0.1dip"
+            android:layout_marginRight="@dimen/margin_0.1dip"
+            android:background="@drawable/bg_bidding"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_28dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:layout_marginRight="@dimen/margin_10dip" >
+
+                <TextView
+                    android:id="@+id/car_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="18"
+                    android:singleLine="true"
+                    android:textColor="@color/car_detials_name_text"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <ImageView
+                    android:id="@+id/processing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_processing" />
+
+                <ImageView
+                    android:id="@+id/auctionType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_10dip"
+                    android:layout_toLeftOf="@+id/processing"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_kuaipai" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_28dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:layout_marginRight="@dimen/margin_10dip" >
+
+                <TextView
+                    android:id="@+id/pinggu_price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/pinggu_price_text"
+                    android:textColor="@color/car_detials_price_et"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/pinggu_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dip"
+                    android:layout_toRightOf="@+id/pinggu_price_text"
+                    android:textColor="@color/car_detials_name_text"
+                    android:textSize="@dimen/text_size_14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_28dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:layout_marginRight="@dimen/margin_10dip" >
+
+                <TextView
+                    android:id="@+id/start_price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/start_price_text"
+                    android:textColor="@color/car_detials_price_et"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/start_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dip"
+                    android:layout_toRightOf="@+id/start_price_text"
+                    android:textColor="@color/car_detials_text_red"
+                    android:textSize="@dimen/text_size_18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_28dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:layout_marginRight="@dimen/margin_10dip" >
+
+                <TextView
+                    android:id="@+id/end_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/end_time_text"
+                    android:textColor="@color/car_detials_price_et"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dip"
+                    android:layout_toRightOf="@+id/end_time_text"
+                    android:textColor="@color/car_detials_name_text"
+                    android:textSize="@dimen/text_size_14sp" />
+                
+                <TextView
+                    android:id="@+id/end_time_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dip"
+                    android:layout_toRightOf="@+id/end_time"
+                    android:textColor="@color/car_detials_name_text"
+                    android:textSize="@dimen/text_size_14sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_28dip"
+                android:background="@drawable/bg_bidding_onlookers"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_onlookers" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/bid_onlookers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/bid_onlookers_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/bid_onlookers_text"
+                        android:textColor="@color/car_detials_price_et"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/margin_1dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/margin_7dip"
+                    android:layout_marginTop="@dimen/margin_7dip"
+                    android:background="@color/gray_color_line" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_bid" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/bid_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/bid_num_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/bid_num_text"
+                        android:textColor="@color/car_detials_price_et"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/item_staging_hot.xml -->

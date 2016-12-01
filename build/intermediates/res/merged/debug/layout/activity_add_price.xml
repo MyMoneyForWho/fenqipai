@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_300dip"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/add_price"
+                android:textColor="@color/car_detials_name_text"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <ImageView
+                android:id="@+id/price_pop_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10dip"
+                android:src="@drawable/btn_delete" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_5dip"
+            android:layout_marginRight="@dimen/margin_5dip"
+            android:background="@color/car_text_orange" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_35dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_15dip"
+                android:text="@string/quick_add_price"
+                android:textColor="@color/car_detials_name_text"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+
+        <com.fenqipai.fenqipaiandroid.view.HorizontalListView
+            android:id="@+id/price_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_15dip"
+            android:layout_marginRight="@dimen/margin_15dip" >
+        </com.fenqipai.fenqipaiandroid.view.HorizontalListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_35dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_15dip"
+                android:text="@string/free_add_price"
+                android:textColor="@color/car_detials_name_text"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip"
+            android:layout_marginLeft="@dimen/margin_15dip"
+            android:layout_marginRight="@dimen/margin_15dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/pop_free_bid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/price_et_bg"
+                android:digits="1234567890"
+                android:hint="@string/input_free_add_price"
+                android:inputType="number"
+                android:padding="@dimen/margin_8dip"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_70dip"
+            android:layout_marginTop="@dimen/margin_15dip"
+            android:background="@color/white_color"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dip"
+                    android:layout_marginBottom="@dimen/margin_0.1dip"
+                    android:background="@color/gray_color_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_8dip"
+                        android:text="@string/car_details_nowprice"
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/car_details_money_symbol"
+                        android:textColor="@color/car_text_orange"
+                        android:textSize="@dimen/text_size_18sp" />
+
+                    <TextView
+                        android:id="@+id/pop_nowprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/car_text_orange"
+                        android:textSize="@dimen/text_size_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_8dip"
+                        android:text="@string/car_details_end"
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_18sp" />
+
+                    <com.fenqipai.fenqipaiandroid.view.TimeTextView
+                        android:id="@+id/car_countdown_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+                    </com.fenqipai.fenqipaiandroid.view.TimeTextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@color/car_text_orange"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/car_details_bidprice"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_confirm_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_300dip"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <ImageView
+                android:id="@+id/back_to_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_back_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/add_price_confirm"
+                android:textColor="@color/car_detials_name_text"
+                android:textSize="@dimen/text_size_18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_5dip"
+            android:layout_marginRight="@dimen/margin_5dip"
+            android:background="@color/car_text_orange" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_181dip"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_36dip"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/pop_confirm_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/car_text_orange"
+                    android:textSize="@dimen/text_size_32sp"
+                    android:includeFontPadding="false"
+                    android:text="23.25万" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_26dip"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+                
+                <View 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/confirm_now_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/car_detials_price_et"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/pop_bid_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/car_detials_price_et"
+                    android:textSize="@dimen/text_size_18sp" />
+                
+                                <View 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_70dip"
+            android:background="@color/white_color"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dip"
+                    android:layout_marginBottom="@dimen/margin_0.1dip"
+                    android:background="@color/gray_color_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_8dip"
+                        android:text="当前价："
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="¥"
+                        android:textColor="@color/car_text_orange"
+                        android:textSize="@dimen/text_size_18sp" />
+
+                    <TextView
+                        android:id="@+id/car_confirm_startingprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/car_text_orange"
+                        android:textSize="@dimen/text_size_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_8dip"
+                        android:text="距结束："
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_18sp" />
+
+                    <com.fenqipai.fenqipaiandroid.view.TimeTextView
+                        android:id="@+id/car_countdown_other_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+                    </com.fenqipai.fenqipaiandroid.view.TimeTextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/confirm_bid_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@color/car_text_orange"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="确认出价"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_add_price.xml -->

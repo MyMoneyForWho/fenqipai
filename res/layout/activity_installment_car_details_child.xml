@@ -1,0 +1,610 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10dip" />
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_fragment_chamfer"
+        android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.fenqipai.fenqipaiandroid.view.viewpager.CycleViewPager
+            android:id="@+id/car_details_cycle_viewpager"
+            android:name="com.fenqipai.fenqipaiandroid.view.viewpager.CycleViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="205dip" >
+        </com.fenqipai.fenqipaiandroid.view.viewpager.CycleViewPager>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:src="@drawable/icon_new_car" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_0.1dip"
+        android:layout_marginLeft="@dimen/margin_0.1dip"
+        android:layout_marginRight="@dimen/margin_0.1dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_112dip"
+            android:layout_weight="2"
+            android:background="@color/white_color" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_28dip"
+                    android:layout_marginLeft="@dimen/margin_10dip" >
+
+                    <TextView
+                        android:id="@+id/car_all_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_28dip"
+                    android:layout_marginLeft="@dimen/margin_10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/start_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/installment_sale_price"
+                        android:textColor="@color/car_detials_price_et"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:id="@+id/starting_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_28dip"
+                    android:layout_marginLeft="@dimen/margin_10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/pinggu_price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/extract_car_price"
+                        android:textColor="@color/car_detials_price_et"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:id="@+id/pinggu_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/car_detials_text_red"
+                        android:textSize="@dimen/text_size_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_28dip"
+                    android:layout_marginLeft="@dimen/margin_10dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_approve" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margin_10dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_sanjiao_left" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_112dip"
+            android:layout_weight="1"
+            android:background="@color/onlookers_background_color"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_17dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:layout_marginTop="@dimen/margin_5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/shoufu_price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/shoufu_price_text"
+                    android:textColor="@color/car_details_text_grey"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <TextView
+                    android:id="@+id/shoufu_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/car_text_orange"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_17dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/rent_price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/rent_price_text"
+                    android:textColor="@color/car_details_text_grey"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <TextView
+                    android:id="@+id/rent_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/car_text_orange"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_17dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/term_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/term_text"
+                    android:textColor="@color/car_details_text_grey"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <TextView
+                    android:id="@+id/term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/car_text_orange"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_17dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/gps_price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/gps_price_text"
+                    android:textColor="@color/car_details_text_grey"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <TextView
+                    android:id="@+id/gps_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/car_text_orange"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_17dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tax_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/tax_text"
+                    android:textColor="@color/car_details_text_grey"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <TextView
+                    android:id="@+id/tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/car_text_orange"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_17dip"
+                android:layout_marginBottom="@dimen/margin_5dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/insurance_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/insurance_text"
+                    android:textColor="@color/car_details_text_grey"
+                    android:textSize="@dimen/text_size_10sp" />
+
+                <TextView
+                    android:id="@+id/insurance_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/car_text_orange"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/car_details_params_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/car_details_params"
+                android:textColor="@color/car_detials_name_text"
+                android:textSize="@dimen/text_size_18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dip"
+            android:layout_marginLeft="@dimen/margin_5dip"
+            android:layout_marginRight="@dimen/margin_5dip"
+            android:background="@color/car_text_orange" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_saletype"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/saleType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_years"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_maxspeed"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/maxspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_officialAcceleration"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/officialAcceleration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_foundAcceleration"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/foundAcceleration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_foundBrake"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/foundBrake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_officialFuel"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/officialFuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_foundFuel"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/foundFuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_warranty"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/warranty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_car_color"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/car_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_28dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/installment_level"
+                android:textColor="@color/car_detials_name_text" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/car_details_text_grey" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_0.5dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip"
+            android:background="@color/gray_color_line" />
+
+        <RelativeLayout
+            android:id="@+id/more_params"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip"
+            android:layout_marginLeft="@dimen/margin_10dip"
+            android:layout_marginRight="@dimen/margin_10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_25dip"
+                android:layout_toLeftOf="@+id/more_info"
+                android:text="@string/car_details_look_more"
+                android:textColor="@color/car_text_orange"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <ImageView
+                android:id="@+id/more_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_more_info" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10dip" />
+
+</LinearLayout>

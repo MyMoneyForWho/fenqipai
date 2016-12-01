@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_selector"
+    android:paddingLeft="2dip"
+    android:paddingRight="7dip" >
+
+    <TextView
+        android:id="@+id/my_item_names"
+        style="@style/MarginMyFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/text_padding"
+        android:textSize="@dimen/title_text_size_small"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/my_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height"
+        android:layout_toLeftOf="@+id/my_item_detail"
+        android:layout_toStartOf="@+id/my_item_detail"
+        android:gravity="center_vertical"
+        android:padding="@dimen/text_padding"
+        android:textColor="#333333"
+        android:textSize="@dimen/title_text_size_small" />
+
+    <ImageView
+        android:id="@+id/my_item_detail"
+        style="@style/MarginMyFragment"
+        android:layout_width="wrap_content"                                                            
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        />
+
+    <ToggleButton
+        android:id="@+id/my_item_tb"
+        style="@style/MarginMyFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:button="@drawable/switch_btn"
+        android:checked="true"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+</RelativeLayout>

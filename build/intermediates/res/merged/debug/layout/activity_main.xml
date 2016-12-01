@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/service_line_color" />
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/indicator_background"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_checked_bg"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_selector_home"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
+            android:text="@string/home"
+            android:textColor="@color/tab_selector_tv_color"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_merchandise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_checked_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_merchandise"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
+            android:text="@string/merchandise"
+            android:textColor="@color/tab_selector_tv_color"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_checked_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_community"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
+            android:text="@string/community"
+            android:textColor="@color/tab_selector_tv_color"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_checked_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_cart"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
+            android:text="@string/cart"
+            android:textColor="@color/tab_selector_tv_color"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector_checked_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_my"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
+            android:text="@string/my"
+            android:textColor="@color/tab_selector_tv_color"
+            android:textSize="@dimen/text_size_12sp" />
+    </RadioGroup>
+
+</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_main.xml -->

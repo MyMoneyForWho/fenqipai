@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.fenqipai.fenqipaiandroid.view.DropDownMenu
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dddividerColor="@color/gray"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddmenuSelectedIcon="@drawable/drop_down_selected_icon"
+        app:ddmenuTextSize="13sp"
+        app:ddmenuUnselectedIcon="@drawable/drop_down_unselected_icon"
+        app:ddtextSelectedColor="@color/drop_down_selected"
+        app:ddtextUnselectedColor="@color/drop_down_unselected"
+        app:ddunderlineColor="@color/gray" >
+    </com.fenqipai.fenqipaiandroid.view.DropDownMenu>
+
+    <com.fenqipai.fenqipaiandroid.view.refresh.PullToRefreshListView
+        android:id="@+id/staging_hot_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/margin_16dip"
+        android:paddingRight="@dimen/margin_16dip"
+        android:layout_marginBottom="@dimen/margin_16dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </com.fenqipai.fenqipaiandroid.view.refresh.PullToRefreshListView>
+
+</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/fragment_staging_hot.xml -->

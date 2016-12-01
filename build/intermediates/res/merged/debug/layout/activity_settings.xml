@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bill_bg_color"
+    android:orientation="vertical" >
+
+    <com.fenqipai.fenqipaiandroid.view.TitleBarView
+        android:id="@+id/cart_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48dip" >
+    </com.fenqipai.fenqipaiandroid.view.TitleBarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dip"
+                android:background="@drawable/bg_fragment_chamfer"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dip"
+                    android:layout_marginLeft="@dimen/margin_10dip"
+                    android:layout_marginRight="@dimen/margin_10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/setting_xingneng"
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1dip"
+                    android:layout_marginLeft="@dimen/margin_5dip"
+                    android:layout_marginRight="@dimen/margin_5dip"
+                    android:background="@color/car_text_orange" />
+
+                <com.fenqipai.fenqipaiandroid.view.SettingsItemView
+                    android:id="@+id/Information_push"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dip"
+                    android:visibility="gone" >
+                </com.fenqipai.fenqipaiandroid.view.SettingsItemView>
+
+                <com.fenqipai.fenqipaiandroid.view.SettingsItemView
+                    android:id="@+id/clean_cache"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dip" >
+                </com.fenqipai.fenqipaiandroid.view.SettingsItemView>
+
+                <com.fenqipai.fenqipaiandroid.view.SettingsItemView
+                    android:id="@+id/update_online"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dip" >
+                </com.fenqipai.fenqipaiandroid.view.SettingsItemView>
+
+                <com.fenqipai.fenqipaiandroid.view.SettingsItemView
+                    android:id="@+id/common_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dip" >
+                </com.fenqipai.fenqipaiandroid.view.SettingsItemView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dip"
+                android:layout_marginLeft="@dimen/margin_10dip"
+                android:layout_marginRight="@dimen/margin_10dip"
+                android:background="@drawable/bg_fragment_chamfer"
+                android:orientation="vertical" >
+                
+                                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dip"
+                    android:layout_marginLeft="@dimen/margin_10dip"
+                    android:layout_marginRight="@dimen/margin_10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/set_service"
+                        android:textColor="@color/car_detials_name_text"
+                        android:textSize="@dimen/text_size_18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1dip"
+                    android:layout_marginLeft="@dimen/margin_5dip"
+                    android:layout_marginRight="@dimen/margin_5dip"
+                    android:background="@color/car_text_orange" />
+
+                <com.fenqipai.fenqipaiandroid.view.SettingsItemView
+                    android:id="@+id/opinion_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dip" >
+                </com.fenqipai.fenqipaiandroid.view.SettingsItemView>
+
+                <com.fenqipai.fenqipaiandroid.view.SettingsItemView
+                    android:id="@+id/contact_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dip" >
+                </com.fenqipai.fenqipaiandroid.view.SettingsItemView>
+
+                <com.fenqipai.fenqipaiandroid.view.SettingsItemView
+                    android:id="@+id/about_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48dip" >
+                </com.fenqipai.fenqipaiandroid.view.SettingsItemView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_48dip"
+                android:layout_margin="@dimen/margin_10dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_btn_loginout"
+                android:text="@string/settings_logout"
+                android:textColor="@color/car_text_orange"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_settings.xml -->

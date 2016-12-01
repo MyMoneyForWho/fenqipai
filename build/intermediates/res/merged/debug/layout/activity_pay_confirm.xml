@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/service_background_color"
+    android:orientation="vertical"
+    tools:context=".PayConfirmActivity" >
+
+    <com.fenqipai.fenqipaiandroid.view.TitleBarView
+        android:id="@+id/pay_confirm_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48dip" >
+    </com.fenqipai.fenqipaiandroid.view.TitleBarView>
+
+    <com.fenqipai.fenqipaiandroid.view.refresh.PullToRefreshScrollView
+        android:id="@+id/pay_confirm__scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.fenqipai.fenqipaiandroid.view.refresh.PullToRefreshScrollView>
+
+</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_pay_confirm.xml -->

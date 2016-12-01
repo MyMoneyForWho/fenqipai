@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="super_light_gray">#ececec</color>
+    <color name="little_light_gray">#f3f3f3</color>
+    <color name="light_gray">#DEDEDE</color>
+    <color name="middle_gray">#9C9C9C</color>
+    <color name="dark_gray">#828284</color>
+    <color name="light_blue">#4c7dcc</color>
+    <color name="light_green">#698B22</color>
+    <color name="line_color">#cfcfcf</color>
+    <color name="white">#fff</color>
+    <color name="red">#fd463a</color>
+    <color name="black">#000000</color>
+    <color name="list_divider">#F0F0F0</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightGray">#f6f6f6</color>
+    <color name="darkGray">#828284</color>
+    <color name="lightBlue">#4c7dcc</color>
+ 	<color name="general_color">#0074c1</color>
+ 	<color name="red_color">#be2132</color>
+ 	<color name="gray_background">#f1f1f1</color>
+ 	<color name="vertical_gray_background">#dddddd</color>
+ 	<color name="white_color">#ffffff </color>
+ 	<color name="gray_text">#666666</color>
+ 	<color name="annotation">#999999</color>
+ 	<color name="gray_line">#dddddd</color>
+ 	<color name="img_loge">#808080</color>
+ 
+    <!-- Base -->
+    <color name="background_color">#f2f2f2</color>
+    <color name="text_press_color">#e4e6e5</color>
+    <color name="gray">#737373</color>
+
+    <!-- login -->
+    <color name="devide_line">#CBCED2</color>
+    <color name="login_text_color">#666666</color>
+    <color name="hint_color">#999999</color>
+    <color name="blue_pressed">#ff0099cc</color>
+    <color name="blue_normal">#ff33b5e5</color>
+    <color name="green_complete">#ff99cc00</color>
+    <color name="purple_progress">#ffaa66cc</color>
+    <color name="red_error">#ffff4444</color>
+    <!-- 底部导航栏 -->
+    <color name="indicator_text_normal">#929292</color>
+    <color name="indicator_text_select">#0b6db4</color>
+    <color name="indicator_background">#f9f9f9</color>
+    <color name="indicator_devide_line">#b2b2b2</color>
+    <color name="indicator_select_bg">#e9eef1</color>
+    <color name="indicator_text_color">#be2132</color>
+    <!-- 公共栏 -->
+    <color name="title_background">#0b6db4</color>
+    <!-- 注册按钮 -->
+    <color name="register_btn_background">#51c332</color>
+    <!-- 我的页面 -->
+    <color name="light">#FFEEEEEE</color>
+    <color name="text_hint_color">#999999</color>
+    <!-- 忘记密码 -->
+    <color name="forget_pawwdord_flow_text_color">#0094f1</color>
+    <color name="forget_pawwdord_flow_code_color">#a30f54</color>
+
+    <!-- 设置画面 -->
+    <color name="out_btn_color">#e6162d</color>
+
+    <!-- 百科界面 -->
+    <color name="wiki_selcet">#22c2ed</color>
+
+    <!-- 消息画面 -->
+    <color name="msg_text_read">#ff5252</color>
+    <color name="msg_text_noread">#51e332</color>
+    <color name="refresh_bak_color">#ff8b90af</color>
+    <color name="send_btn">#51c332</color>
+    <color name="send_btn_press">#4caf50</color>
+    <!-- 速递界面 -->
+    <color name="express_edit">#cac9cf</color>
+
+    <!-- 我关注 -->
+    <color name="watch_me">#eeeeee</color>
+
+    <!-- load dialog -->
+    <color name="loading_backgrond">#ff33b5e5</color>
+
+    <!-- 江湖认证 -->
+    <color name="auth_hint">#cccccc</color>
+
+    <!-- 日期选择框 -->
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#aaa</color>
+    <color name="caldroid_middle_gray">#888</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+    <color name="caldroid_333">#333</color>
+    <color name="caldroid_555">#555</color>
+    <color name="caldroid_light_red">#ff7f7f</color>
+    <!-- 位置轮转盘 -->
+    <color name="province_line_border">#C7C7C7</color>
+    <!-- 今日江湖 -->
+    <color name="user_color">#0b6db4</color>
+    <color name="jinri_hint_color">#cac9cf</color>
+    <!-- 对话框 -->
+    <color name="dialog_transparent">#b0000000</color>
+    <color name="dialog_background">#f8f8f8</color>
+    <color name="dialog_button">#fdfdfd</color>
+
+    <!-- 分享对话框 -->
+    <color name="share_transparent">#30000000</color>
+    <color name="search_text">#01cd8c</color>
+    <color name="search_text_press">#00bc80</color>
+
+    <!-- 我的积分 -->
+    <color name="integral_bar">#ff9933</color>
+    <color name="integral_short">#ff3338</color>
+    <color name="integral_bg">#fff3e0</color>
+
+    <!-- 求助 -->
+    <color name="help_title">#0074C1</color>
+    <color name="help_detials_title">#333333</color>
+
+    <!-- 我的邀请 -->
+    <color name="invite_select">#ffb703</color>
+    <color name="invite_unselect">#025591</color>
+
+    <!-- DropDownMenu -->
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+    
+    <!--车辆竞拍  -->
+    <color name="car_detials_name_text">#333333</color>
+    <color name="car_detials_text_red">#be2132</color>
+    <color name="car_details_text_grey">#666666</color>
+    <color name="my_item_background_color">#e5e5e5</color>
+    <color name="car_detials_price_et">#999999</color>
+    <color name="recognizance_activity_pop_bg">#f1f1f1</color>
+    <color name="bidding_car_name_bg">#ccffffff</color>
+    <color name="car_text_orange">#e45614</color>
+    
+    <!--增值服务  -->
+    <color name="service_title_bg_color">#f9f9f9</color>
+    <color name="service_bg_color">#e2e2e2</color>
+    <color name="service_line_color">#b2b2b2</color>
+    <color name="service_background_color">#f6f1eb</color>
+    <color name="onlookers_background_color">#eeeeee</color>
+    <color name="orange_color">#e45614</color>
+    <color name="gray_color_line">#cacaca</color>
+    
+    <!--首页  -->
+    <color name="look_car_bg_color">#e45614</color>
+    <color name="bill_bg_color">#f6f1ed</color>
+    <color name="hot_car_ling">#e2e2e2</color>
+    <color name="web_not_found">#d2d2d2</color>
+    <color name="checked_btn">#c24911</color>
+    <color name="btn_checked">#d9d9d9</color>
+    
+</resources>

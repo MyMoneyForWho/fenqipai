@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderListActivity"
+    android:background="@color/service_background_color" >
+
+    <com.fenqipai.fenqipaiandroid.view.TitleBarView
+        android:id="@+id/order_list_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.fenqipai.fenqipaiandroid.view.TitleBarView>
+
+    <com.fenqipai.fenqipaiandroid.view.refresh.PullToRefreshListView
+        android:id="@+id/order_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin_10dip"
+        android:layout_marginRight="@dimen/margin_10dip"
+        android:layout_marginBottom="@dimen/margin_10dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </com.fenqipai.fenqipaiandroid.view.refresh.PullToRefreshListView>
+</LinearLayout>

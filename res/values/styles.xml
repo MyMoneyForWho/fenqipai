@@ -1,0 +1,234 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- margin style -->
+
+    <style name="MarginStyle">
+        <item name="android:layout_marginLeft">@dimen/margin_8dip</item>
+        <item name="android:layout_marginRight">@dimen/margin_8dip</item>
+    </style>
+    <!-- 调整后发送验证码按钮 -->
+    <style name="ButtonCodeStyleFixed">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_verification</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <!-- 发送验证码按钮 -->
+    <style name="ButtonCodeStyle">
+        <item name="android:layout_marginLeft">@dimen/left_margin</item>
+        <item name="android:layout_marginRight">@dimen/right_margin</item>
+        <item name="android:layout_height">@dimen/text_height</item>
+        <item name="android:background">@drawable/border_send_register</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="NoTitle" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ChatMarginStyle">
+        <item name="android:layout_marginLeft">@dimen/chat_left_margin</item>
+        <item name="android:layout_marginRight">@dimen/chat_right_margin</item>
+    </style>
+
+    <!-- edittext style -->
+    <style name="EditViewStyleFixed">
+        <item name="android:textColor">@color/car_details_text_grey</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_15dip</item>
+        <item name="android:textColorHint">@color/gray_color_line</item>
+    </style>
+    <!-- edittext style other -->
+    <style name="EditViewOtherStyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_height">@dimen/text_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/login_et_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:layout_marginLeft">@dimen/left_margin</item>
+        <item name="android:layout_marginRight">@dimen/right_margin</item>
+        <item name="android:layout_marginTop">@dimen/dot_layout_height</item>
+    </style>
+    <!-- edittext style -->
+    <style name="EditViewStyle">
+        <item name="android:textColor">@color/car_details_text_grey</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_height">@dimen/margin_35dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_15dip</item>
+        <item name="android:textColorHint">@color/gray_color_line</item>
+    </style>
+
+    <declare-styleable name="ProcessButton">
+        <attr name="textProgress" format="string" />
+        <attr name="textComplete" format="string" />
+        <attr name="textError" format="string" />
+        <attr name="colorProgress" format="color" />
+        <attr name="colorComplete" format="color" />
+        <attr name="colorError" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FlatButton">
+        <attr name="colorPressed" format="color" />
+        <attr name="colorNormal" format="color" />
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="my_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#c0392b</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:onClick">dialogShow</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DialogWindowTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@color/car_text_orange</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!-- 倒计时组件 -->
+    <style name="RushBuyCountDownTimerViewStyle" parent="SnapUpView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RushBuyCountDownTimerViewStyleRed" parent="RushBuyCountDownTimerViewStyle">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="SnapUpViewColon" parent="SnapUpView">
+        <item name="android:textColor">#4F4242</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">:</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SnapUpView">
+
+        <!-- //改变控件大小 -->
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- margin my fragment -->
+
+    <style name="MarginMyFragment">
+        <item name="android:layout_marginLeft">@dimen/margin_10dip</item>
+        <item name="android:layout_marginRight">@dimen/margin_10dip</item>
+    </style>
+
+    <!-- login_ style -->
+    <style name="EditLoginViewStyle">
+        <item name="android:textColor">@color/car_details_text_grey</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:layout_height">@dimen/text_height</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/login_et_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/forget_password_left_padding</item>
+        <item name="android:textColorHint">@color/gray_color_line</item>
+    </style>
+
+    <!-- checkbox样式 -->
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+        <!-- checkbox样式 -->
+    <style name="locationCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style_location</item>
+    </style>
+
+    <!-- ratingbar样式 -->
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+<!--         <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item> -->
+    </style>
+
+</resources>

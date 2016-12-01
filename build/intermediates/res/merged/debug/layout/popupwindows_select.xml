@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_286dip"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_13dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/pop_bid_text"
+                android:textColor="@color/car_detials_text_red"
+                android:textSize="@dimen/text_size_22sp" />
+
+            <ImageView
+                android:id="@+id/price_pop_close"
+                android:layout_width="@dimen/margin_24dip"
+                android:layout_height="@dimen/margin_24dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_8dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_8dip"
+            android:layout_marginRight="@dimen/margin_8dip"
+            android:layout_marginTop="@dimen/margin_13dip"
+            android:background="@color/car_detials_text_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dip"
+            android:layout_marginTop="@dimen/margin_8dip"
+            android:text="@string/pop_quick_bid_text"
+            android:textColor="@color/car_detials_name_text"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <com.fenqipai.fenqipaiandroid.view.HorizontalListView
+            android:id="@+id/price_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/margin_16dip" >
+        </com.fenqipai.fenqipaiandroid.view.HorizontalListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dip"
+            android:text="@string/pop_free_bid_text"
+            android:textColor="@color/car_detials_name_text"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dip"
+            android:layout_marginRight="@dimen/margin_16dip"
+            android:layout_marginTop="@dimen/margin_16dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/pop_free_bid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/price_et_bg"
+                android:hint="@string/pop_free_bid_et"
+                android:inputType="number"
+                android:padding="@dimen/margin_8dip"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <Button
+                android:id="@+id/btn_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/car_detials_text_red"
+                android:text="@string/pop_free_bid_btn"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_8dip"
+                    android:text="@string/pop_now_price_text"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_8dip"
+                    android:text="@string/pop_money_symbol"
+                    android:textColor="@color/car_detials_text_red"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/pop_nowprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/car_detials_text_red"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <com.fenqipai.fenqipaiandroid.view.SnapUpCountDownTimerView
+                android:id="@+id/car_countdown_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_16dip"
+                app:viewSize="12" >
+            </com.fenqipai.fenqipaiandroid.view.SnapUpCountDownTimerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_confirm_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_286dip"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dip"
+            android:layout_marginRight="@dimen/margin_8dip"
+            android:layout_marginTop="@dimen/margin_12dip" >
+
+            <ImageView
+                android:id="@+id/back_to_price"
+                android:layout_width="@dimen/margin_24dip"
+                android:layout_height="@dimen/margin_24dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_back_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/pop_confirm_bid_text"
+                android:textColor="@color/car_detials_text_red"
+                android:textSize="@dimen/text_size_22sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_8dip"
+            android:layout_marginRight="@dimen/margin_8dip"
+            android:layout_marginTop="@dimen/margin_12dip"
+            android:background="@color/car_detials_text_red" />
+
+        <TextView
+            android:id="@+id/pop_confirm_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_64dip"
+            android:textColor="@color/car_detials_text_red"
+            android:textSize="@dimen/text_size_32sp" />
+
+        <TextView
+            android:id="@+id/pop_bid_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_22dip"
+            android:textColor="@color/car_details_text_grey"
+            android:textSize="@dimen/text_size_22sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48dip"
+            android:layout_marginTop="@dimen/margin_28dip"
+            android:background="@color/car_detials_text_red" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/pop_confirm_bid_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/popupwindows_select.xml -->

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="@dimen/margin_300dip"
+    android:layout_height="@dimen/margin_144dip"
+    android:background="@drawable/bg_details_pop"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_96dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pop_unbind_content"
+            android:textColor="@color/car_detials_name_text"
+            android:textSize="@dimen/text_size_18sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5dip"
+        android:layout_marginLeft="@dimen/margin_10dip"
+        android:layout_marginRight="@dimen/margin_10dip"
+        android:background="@color/gray_color_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48dip"
+        android:layout_marginLeft="@dimen/margin_10dip"
+        android:layout_marginRight="@dimen/margin_10dip" >
+
+        <TextView
+            android:id="@+id/pop_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/pop_unbind"
+            android:textColor="@color/car_detials_price_et"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/pop_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/pop_del_back"
+            android:textColor="@color/car_text_orange"
+            android:textSize="@dimen/text_size_16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

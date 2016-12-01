@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dip"
+        android:layout_marginTop="@dimen/margin_10dip"
+        android:orientation="horizontal" >
+
+        <com.fenqipai.fenqipaiandroid.view.RoundedImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/margin_165dip"
+            android:layout_height="@dimen/margin_93dip"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            app:riv_corner_radius_bottom_left="@dimen/margin_5dip"
+            app:riv_corner_radius_bottom_right="@dimen/margin_5dip"
+            app:riv_corner_radius_top_left="@dimen/margin_5dip"
+            app:riv_corner_radius_top_right="@dimen/margin_5dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/car_detials_name_text"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_33dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/car_detials_price_et"
+                    android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_20dip" >
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/car_details_text_grey"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_zixun" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.3dip"
+        android:background="@color/gray_color_line" />
+
+</LinearLayout>

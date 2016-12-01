@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_textview_space"
+        android:textColor="@color/car_text_orange" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_textview_day"
+        android:textColor="@color/car_text_orange"
+        android:layout_marginLeft="@dimen/margin_1dip" />
+
+    <TextView
+        android:id="@+id/tv_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_textview_space"
+        android:textColor="@color/car_text_orange"
+        android:layout_marginLeft="@dimen/margin_1dip"  />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_textview_hour"
+        android:textColor="@color/car_text_orange"
+        android:layout_marginLeft="@dimen/margin_1dip"  />
+
+    <TextView
+        android:id="@+id/tv_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_textview_space"
+        android:textColor="@color/car_text_orange"
+        android:layout_marginLeft="@dimen/margin_1dip"  />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_textview_min"
+        android:textColor="@color/car_text_orange"
+        android:layout_marginLeft="@dimen/margin_1dip"  />
+
+    <TextView
+        android:id="@+id/tv_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_textview_space"
+        android:textColor="@color/car_text_orange"
+        android:layout_marginLeft="@dimen/margin_1dip"  />
+
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_textview_sec"
+        android:textColor="@color/car_text_orange"
+        android:layout_marginLeft="@dimen/margin_1dip"  />
+    
+    <TextView 
+        android:id="@+id/tv_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="倒计时结束"
+        android:textColor="@color/car_text_orange"
+        android:visibility="gone"/>
+
+</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/view_time_textviews.xml -->
