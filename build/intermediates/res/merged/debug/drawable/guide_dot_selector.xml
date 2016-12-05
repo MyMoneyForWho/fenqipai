@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/dot_checked" android:state_enabled="false"/>
     <item android:drawable="@drawable/dot_unchecked" android:state_enabled="true"/>
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/guide_dot_selector.xml -->
+</selector>

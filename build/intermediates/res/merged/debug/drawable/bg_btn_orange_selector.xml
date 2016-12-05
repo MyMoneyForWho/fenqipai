@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/bg_btn_orange" android:state_pressed="false"/>
     <item android:drawable="@drawable/bg_btn_orange"/>
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/bg_btn_orange_selector.xml -->
+</selector>

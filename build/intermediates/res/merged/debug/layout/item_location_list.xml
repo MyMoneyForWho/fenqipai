@@ -74,4 +74,4 @@
             android:textColor="@color/car_detials_name_text"
             android:textSize="@dimen/text_size_14sp" />
     </LinearLayout>
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/item_location_list.xml -->
+</LinearLayout>

@@ -19,4 +19,4 @@
         android:layout_weight="1" >
     </com.fenqipai.fenqipaiandroid.view.refresh.PullToRefreshScrollView>
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_pay_confirm.xml -->
+</LinearLayout>

@@ -5,4 +5,4 @@
     <item android:state_pressed="false" android:color="@color/car_detials_price_et"/>
  
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/color/item_program_tv_color.xml -->
+</selector>

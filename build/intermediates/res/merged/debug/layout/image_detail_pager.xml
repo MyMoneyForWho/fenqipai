@@ -27,4 +27,4 @@
         android:textColor="@android:color/white"
         android:textSize="18sp" />
 
-</RelativeLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/image_detail_pager.xml -->
+</RelativeLayout>

@@ -12,4 +12,4 @@
         android:textColor="@color/car_detials_name_text"
         android:textSize="@dimen/text_size_16sp" />
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/item_img_show.xml -->
+</LinearLayout>

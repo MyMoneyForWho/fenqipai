@@ -2,214 +2,228 @@
 <items version="2" >
 
     <item
-        jar="E:\studio-work-space\fenqipai\libs\baidumapapi_radar_v4_0_0.jar"
-        jumboMode="false"
+        jar="D:\studioWorkPlace\fenqipai\libs\baidumapapi_radar_v4_1_1.jar"
+        jumboMode="true"
         revision="23.0.1"
-        sha1="81b00e6e2da11e12554d8cbf0acc23627fd1225b">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\baidumapapi_radar_v4_0_0-29ef512d7bfb68c49fcad8e78407690e4920f5fc.jar" />
+        sha1="ec3b3b79fdcc8fe059676554e31053027043edf8">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_radar_v4_1_1_86ad4fe2b57c8c7a00c40668219e7a56c7103b22\classes.dex" />
     </item>
     <item
-        jar="E:\studio-work-space\fenqipai\libs\MobLogCollector.jar"
-        jumboMode="false"
+        jar="D:\studioWorkPlace\fenqipai\libs\baidumapapi_map_v4_1_1.jar"
+        jumboMode="true"
         revision="23.0.1"
-        sha1="42204cd0d4fe7de8505f74aa8a4598079e71edd0">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\MobLogCollector-86f6a65b63d90882bd35beebca2a741b13bc27a7.jar" />
+        sha1="930064f0a91ff20ceb8dd4504b7dadec5aabea82">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_map_v4_1_1_e42717818751f6d390ea789ae876d353e50325d1\classes.dex" />
     </item>
     <item
-        jar="E:\studio-work-space\fenqipai\libs\MobTools.jar"
-        jumboMode="false"
+        jar="D:\studioWorkPlace\fenqipai\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         revision="23.0.1"
-        sha1="97f9eebb8b0879b6474c82f756856160968090fc">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\MobTools-5c627f11a6460c91342da1b28d3181a766c27712.jar" />
+        sha1="ff6348991cd61702886d62915b713dbe1be809c4">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_977519fc590cd6c8cef304ba45bdac9a69544917\classes.dex" />
     </item>
     <item
-        jar="E:\studio-work-space\fenqipai\libs\open_sdk_r5276.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="9e2c4b8c07d6cfc4de7f7f65251971e0e1025bf1">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\open_sdk_r5276-4be71e6bf3a9d2a5717c9dbaf3d76cd6a2d9ed22.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\UPPayPluginExPro.jar"
-        jumboMode="false"
+        jar="D:\studioWorkPlace\fenqipai\libs\UPPayPluginExPro.jar"
+        jumboMode="true"
         revision="23.0.1"
         sha1="b88c4bb7a5f820c01074d1235a3fdfb8ff45b27f">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\UPPayPluginExPro-1c0e6bb79351beb22868763cdeeb7f80b9a17ee5.jar" />
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\UPPayPluginExPro_d911b34217cf640d845cea145e917a8b28c54521\classes.dex" />
     </item>
     <item
-        jar="E:\studio-work-space\fenqipai\libs\umeng-analytics-v5.6.4.jar"
-        jumboMode="false"
+        jar="D:\studioWorkPlace\fenqipai\libs\baidumapapi_search_v4_1_1.jar"
+        jumboMode="true"
         revision="23.0.1"
-        sha1="76fed6d2233b958f0c1d589aa366785e0ab5c8f1">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\umeng-analytics-v5.6.4-03c089f900a35e5f1d3921610cea03585e254231.jar" />
+        sha1="b73dac26619f94061d28c54a7982ae8e0e783903">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_search_v4_1_1_c20d24a00d1f190b8937000e179925bbdbb19890\classes.dex" />
     </item>
     <item
-        jar="E:\studio-work-space\fenqipai\libs\commons-httpclient-3.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="964cd74171f427720480efdec40a7c7f6e58426a">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\commons-httpclient-3.1-5725dcb03a346bde89e710580af41dd236a5b134.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\universal-image-loader-1.8.6-with-sources.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="9ad605dd55be2e74e614b2ab2ff466439c4461b7">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\universal-image-loader-1.8.6-with-sources-6d3c74a8b5e39f6a82a0882c926573426f4145b2.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\baidumapapi_util_v4_0_0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1e9069435803e5a4f32dc429906def33a95aaf17">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\baidumapapi_util_v4_0_0-af3abd8e0fa38c7370ce83bf4ada4e25b01be007.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\baidumapapi_base_v4_0_0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="dc207932ddfb65566a157ca311a6a6dffc7fccab">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\baidumapapi_base_v4_0_0-557d374175a289e73aabbb93701c1b512d7db455.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\SMSSDK-1.3.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="03c772f7b43ba40237066002ef2e7875a5ce59cc">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\SMSSDK-1.3.0-c4c7dc70b2aefde251e3e8bc3378f87f4b3fa154.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\baidumapapi_cloud_v4_0_0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="e2aca735ca322917c5ee5fd40d663773391cf0a6">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\baidumapapi_cloud_v4_0_0-b1c8a793be81f633d9ced47334d72f68b975f1c4.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\date4j.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1aa38f33676be5d3a91ac9d1e9f9ff398eeb955e">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\date4j-86cf393a650157099b2456dea3e92552146374da.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\picasso-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\picasso-2.4.0-abc6a014b0c947671285fe8d8f237c718cb8ba9a.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\android-support-v4.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="0725d32f682f72bdfb3f61a2cd04dc3763710b6c">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\android-support-v4-d25ca060e99ea0cad63e9d792d56cebc34d17bea.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\alipaySdk-20160516.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="6dbd15e12806634fb809af9b565d1cf22dca9d2c">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\alipaySdk-20160516-74bc2fad17a8a0b56707302df7162864ee29df47.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\xUtils-2.6.14.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\xUtils-2.6.14-df0e2df2c93d54296620cfebc9d0a50217444c47.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\gson-2.6.2.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\gson-2.6.2-eaa20ee4afafc060faaf9f3ce56f4ea75286ecc5.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\libammsdk_old.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="db6144f812752e2f62b8811c8b9d5e4346fff151">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\libammsdk_old-03b770efb83c6ba065d5d4ce0fc2318891c42600.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\pinyin4j-2.5.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ae353005f973da1cd8545b54354504c2503f6865">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0-e5e9a7c6b42441c942811154bd28fe915cf73bda.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\EventBus-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="9bfccc621288e8f24a8ece5be11e6c9e48013bb5">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\EventBus-2.4.0-87f9a0ac7fc799506dfb4db1fc39effff7393627.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\org.eclipse.paho.client.mqttv3-1.0.1-20141007.040217-92.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4c44de5c61bc33b571383134aefb39d54076979f">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\org.eclipse.paho.client.mqttv3-1.0.1-20141007.040217-92-4be0719740770b82eecd4ef234396d2cf40cfb0b.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\baidumapapi_map_v4_0_0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="db4a1025ee9c6f95747aab4a69baa1391534d80e">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\baidumapapi_map_v4_0_0-053b0ff2a1b175fd64f3c1cca761d19cd89a0806.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\nineoldandroids-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-5a7f5eb07e2ac78c97651f3e6f8c9d4c95b82f88.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\json_simple-1.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\json_simple-1.1-e89fb5a436f3d3323a1248d66ed1a72e2bd8c607.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\baidumapapi_search_v4_0_0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="08f97ee0e35fb17d405d29bf62eef305faffffcc">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\baidumapapi_search_v4_0_0-6eb6c535b452ca03372c2213696c36179532b93f.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\weiboSDKCore_3.1.2.jar"
-        jumboMode="false"
+        jar="D:\studioWorkPlace\fenqipai\libs\weiboSDKCore_3.1.2.jar"
+        jumboMode="true"
         revision="23.0.1"
         sha1="1c0bfcddc15de1e8a90ff166da0b9abe011346af">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\weiboSDKCore_3.1.2-6c15d57e2af633993bf10cd4b095862000508b33.jar" />
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\weiboSDKCore_3.1.2_735cef864bff974a82f15b2f40718e93fce7859f\classes.dex" />
     </item>
     <item
-        jar="E:\studio-work-space\fenqipai\libs\locSDK_6.13.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\locSDK_6.13-c4e8344ab5f03408cf58f306f29a0e0c5f79fd10.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\mta-sdk-1.6.2.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\mta-sdk-1.6.2-6d48f13313b711c773e71c1fa06595d49c16f969.jar" />
-    </item>
-    <item
-        jar="E:\studio-work-space\fenqipai\libs\UPPayAssistEx.jar"
-        jumboMode="false"
+        jar="D:\studioWorkPlace\fenqipai\libs\UPPayAssistEx.jar"
+        jumboMode="true"
         revision="23.0.1"
         sha1="414315e314701247e655213062c72c86c36f7804">
-        <dex dex="E:\studio-work-space\fenqipai\build\intermediates\pre-dexed\debug\UPPayAssistEx-d76d7f205d0846bbaa37646356355aba336a2a67.jar" />
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\UPPayAssistEx_4fff456b56bfeabe6454815fa080097b6d211ce6\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\baidumapapi_base_v4_1_1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="00cd7d6a741c6a922c9cf7b0db52a357ebf12cdb">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_base_v4_1_1_fe063e262e3fe9d616a36cd0abe34c4b49f4041b\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\MobLogCollector.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="42204cd0d4fe7de8505f74aa8a4598079e71edd0">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\MobLogCollector_f9e649c416698b4a94909e5a2bae42ca6b81e7e6\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\libammsdk_old.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="db6144f812752e2f62b8811c8b9d5e4346fff151">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\libammsdk_old_d4525e75cff8299601f811dd58af5282dfbc6075\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\picasso-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\picasso-2.4.0_adddd8da313c9a8cbb41d14945aed81dce6217c9\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\open_sdk_r5276.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="9e2c4b8c07d6cfc4de7f7f65251971e0e1025bf1">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\open_sdk_r5276_f80ca3f9e1b09106b8c20432a660a2210ec39046\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\nineoldandroids-2.4.0_e61bf56ec87b4588749e7ad406d6fb2c1765308a\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\alipaySdk-20160516.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="6dbd15e12806634fb809af9b565d1cf22dca9d2c">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\alipaySdk-20160516_44b0a0df90cf8455e5b914a90f5b7c38173c88a4\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\universal-image-loader-1.8.6-with-sources.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="9ad605dd55be2e74e614b2ab2ff466439c4461b7">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.8.6-with-sources_9f40f22f5932d53ab81a3e92a563bae70b6ac9a0\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\MobTools.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="97f9eebb8b0879b6474c82f756856160968090fc">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\MobTools_c894103cc794a10c79b061606969ad7474952758\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\pinyin4j-2.5.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\pinyin4j-2.5.0_892e5ccff978c8c750e47064a71d45dc26374d0d\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\umeng-analytics-v5.6.4.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="76fed6d2233b958f0c1d589aa366785e0ab5c8f1">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\umeng-analytics-v5.6.4_21be4b8b25da28c84121c7e28414b86ca45c2fa7\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\baidumapapi_cloud_v4_1_1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="93ef91d018051b8b5e001eb5e106b983fee8a549">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_cloud_v4_1_1_8630c78a60fc7cc72542bfdbd109182f1593fae3\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\baidumapapi_util_v4_1_1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d5630c44b212b90ad64c2bc2a994cbf28d1b08a7">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\baidumapapi_util_v4_1_1_a2794246a7dc816889067cdf058de952ef6d64b7\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\org.eclipse.paho.client.mqttv3-1.0.1-20141007.040217-92.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4c44de5c61bc33b571383134aefb39d54076979f">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\org.eclipse.paho.client.mqttv3-1.0.1-20141007.040217-92_d9e3037b6fabda0a148c0eb040f90b395b5a3614\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\SMSSDK-1.3.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="03c772f7b43ba40237066002ef2e7875a5ce59cc">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\SMSSDK-1.3.0_70f37ec7e211e366a1fcfa2b96340363a4826a12\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\mta-sdk-1.6.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\mta-sdk-1.6.2_96761f3dbc7d2d093c325c189de0de2f275869c5\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\commons-httpclient-3.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="964cd74171f427720480efdec40a7c7f6e58426a">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\commons-httpclient-3.1_0d50fa7fee01e7f47fe3a13172a085f5dbd2537d\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\date4j.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1aa38f33676be5d3a91ac9d1e9f9ff398eeb955e">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\date4j_89f3727339edb57b09d5557b7b47a42e4b690351\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\EventBus-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="9bfccc621288e8f24a8ece5be11e6c9e48013bb5">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\EventBus-2.4.0_027443a8b5c8a440215ef16edf006d7614516148\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\xUtils-2.6.14.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\xUtils-2.6.14_8a489952f3a6928b8153c23c3a9aefb6d21fcad6\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\android-support-v4.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="0725d32f682f72bdfb3f61a2cd04dc3763710b6c">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v4_a2401394587f1d67b76e5279eb491869825847e8\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="701f0a195cb1bf77dc8bde1528bd1220d0eda039">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_bc303827c49e81fd443bf9f57d3cab30b5c0ae55\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\locSDK_6.13.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\locSDK_6.13_c25ddddf82f71c76d0c06768383880d77aac468e\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\json_simple-1.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\json_simple-1.1_46da5eb41b12bcd09c6df0566888edc894ff8c64\classes.dex" />
+    </item>
+    <item
+        jar="D:\studioWorkPlace\fenqipai\libs\gson-2.6.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="D:\studioWorkPlace\fenqipai\build\intermediates\transforms\dex\debug\folders\1000\2\gson-2.6.2_977c752b3799762cd41a77f538578e8075d9eade\classes.dex" />
     </item>
 
 </items>

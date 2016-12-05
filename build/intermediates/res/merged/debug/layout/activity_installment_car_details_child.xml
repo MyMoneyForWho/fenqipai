@@ -607,4 +607,4 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_10dip" />
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_installment_car_details_child.xml -->
+</LinearLayout>

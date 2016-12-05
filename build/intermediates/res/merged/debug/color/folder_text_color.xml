@@ -5,4 +5,4 @@
     <item android:color="#232323" android:state_selected="true" />
     <item android:color="#232323" android:state_checked="true" />
     <item android:color="#CDCECE" />
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/color/folder_text_color.xml -->
+</selector>

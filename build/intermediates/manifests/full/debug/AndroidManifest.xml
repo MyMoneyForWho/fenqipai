@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fenqipai.fenqipaiandroid"
-    android:versionCode="2"
-    android:versionName="1.1.0" >
+    android:versionCode="1"
+    android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="15" />
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
 
     <permission
         android:name="com.fenqipai.fenqipaiandroid.permission.JPUSH_MESSAGE"
@@ -71,7 +71,7 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="iuw4GeHWeoNYVwvBuub312Nb1eXXyKrT" />
+            android:value="ocGpTDjGj9lHqg0Io4MzcsnNTfmPjg1X" />
         <!-- 银联支付 -->
         <uses-library
             android:name="org.simalliance.openmobileapi"

@@ -5,4 +5,4 @@
     <item android:state_checked="false" android:color="@color/car_detials_name_text"/>
     <item android:color="@color/car_detials_name_text"/>
     
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/bg_bottom_bar_text.xml -->
+</selector>

@@ -3,4 +3,4 @@
 
     <item android:drawable="@android:color/transparent" android:state_checked="true"/>
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/tab_selector_checked_bg.xml -->
+</selector>

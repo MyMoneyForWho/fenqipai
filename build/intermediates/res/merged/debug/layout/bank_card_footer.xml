@@ -24,4 +24,4 @@
         android:textColor="@color/white_color"
         android:textSize="@dimen/text_size_18sp" />
 
-</RelativeLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/bank_card_footer.xml -->
+</RelativeLayout>

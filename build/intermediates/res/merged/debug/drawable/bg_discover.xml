@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/bg_radio_check_no" android:state_checked="false"/>
     <item android:drawable="@drawable/bg_radio_check_no"/>
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/bg_discover.xml -->
+</selector>

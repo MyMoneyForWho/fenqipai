@@ -71,7 +71,7 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="iuw4GeHWeoNYVwvBuub312Nb1eXXyKrT" />
+            android:value="ocGpTDjGj9lHqg0Io4MzcsnNTfmPjg1X" />
         <!-- 银联支付 -->
         <uses-library
             android:name="org.simalliance.openmobileapi"

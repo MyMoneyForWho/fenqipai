@@ -23,4 +23,4 @@
         android:text="数据加载中……"
         android:textColor="@android:color/white" />
 
-</RelativeLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/loading_dialog.xml -->
+</RelativeLayout>

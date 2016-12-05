@@ -21,4 +21,3 @@
         android:state_focused="true"
         android:drawable="@drawable/s1"/>
 </selector>
-<!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/snailbar_thumb.xml -->

@@ -4,4 +4,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/btn_checked_bg_orange_garden"/>
     <item android:drawable="@drawable/btn_bg_orange_garden"/>
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/confirm_btn_selector.xml -->
+</selector>

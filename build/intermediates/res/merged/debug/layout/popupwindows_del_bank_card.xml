@@ -53,4 +53,4 @@
             android:textSize="@dimen/text_size_16sp" />
     </RelativeLayout>
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/popupwindows_del_bank_card.xml -->
+</LinearLayout>

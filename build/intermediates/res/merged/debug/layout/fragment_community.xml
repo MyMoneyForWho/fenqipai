@@ -12,4 +12,4 @@
         android:layout_height="wrap_content" >
     </com.fenqipai.fenqipaiandroid.view.TitleBarView>
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/fragment_community.xml -->
+</LinearLayout>

@@ -25,4 +25,4 @@
         android:layout_height="wrap_content"
         android:src="@drawable/btn_unselected"/>
 
-</FrameLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/list_item_image.xml -->
+</FrameLayout>

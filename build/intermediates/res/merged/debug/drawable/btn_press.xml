@@ -4,4 +4,4 @@
 
     <corners android:radius="2dp" />
     <solid android:color="@color/blue_pressed" />
-</shape><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/btn_press.xml -->
+</shape>

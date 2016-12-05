@@ -5,4 +5,4 @@
     <item android:state_checked="false" android:color="@color/img_loge"/>
     <item android:color="@color/img_loge"/>
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/color/tab_selector_tv_color.xml -->
+</selector>

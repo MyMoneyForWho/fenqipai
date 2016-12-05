@@ -18,4 +18,4 @@
         android:layout_gravity="center"
         android:visibility="gone" />
 
-</FrameLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/image_detail_fragment.xml -->
+</FrameLayout>

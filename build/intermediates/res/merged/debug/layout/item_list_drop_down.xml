@@ -20,4 +20,4 @@
         android:layout_height="0.5dp"
         android:background="@color/gray" />
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/item_list_drop_down.xml -->
+</LinearLayout>

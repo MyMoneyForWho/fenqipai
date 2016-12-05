@@ -13,4 +13,4 @@
     <stroke 
         android:width="@dimen/margin_0.1dip"
         android:color="@color/gray_color_line"/>
-</shape><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/bg_staging_bill_details.xml -->
+</shape>

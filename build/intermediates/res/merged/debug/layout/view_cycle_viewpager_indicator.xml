@@ -12,4 +12,4 @@
          android:layout_gravity="center_vertical"
          android:scaleType="fitXY"/>
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/view_cycle_viewpager_indicator.xml -->
+</LinearLayout>

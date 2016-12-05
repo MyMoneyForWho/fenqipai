@@ -76,4 +76,4 @@
         android:textColor="@color/car_text_orange"
         android:visibility="gone"/>
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/view_time_textviews.xml -->
+</LinearLayout>

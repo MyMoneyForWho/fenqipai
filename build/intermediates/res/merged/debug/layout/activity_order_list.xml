@@ -23,4 +23,4 @@
         android:listSelector="@android:color/transparent"
         android:scrollbars="none" >
     </com.fenqipai.fenqipaiandroid.view.refresh.PullToRefreshListView>
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_order_list.xml -->
+</LinearLayout>

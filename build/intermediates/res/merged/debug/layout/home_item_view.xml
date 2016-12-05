@@ -105,4 +105,4 @@
             android:textSize="@dimen/label_size" />
     </RelativeLayout>
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/home_item_view.xml -->
+</LinearLayout>

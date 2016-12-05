@@ -104,4 +104,4 @@
         android:textColor="@android:color/white"
         android:textSize="15sp" />
 
-</RelativeLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_qr_scan.xml -->
+</RelativeLayout>

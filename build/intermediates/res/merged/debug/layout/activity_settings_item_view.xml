@@ -69,4 +69,4 @@
         android:layout_marginRight="@dimen/margin_10dip"
         android:background="@color/gray_line" />
 
-</RelativeLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_settings_item_view.xml -->
+</RelativeLayout>

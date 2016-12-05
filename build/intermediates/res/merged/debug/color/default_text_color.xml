@@ -5,4 +5,4 @@
     <item android:color="#CDCECE" android:state_pressed="false" />
     <item android:color="#FFFFFF" android:state_pressed="true" />
     <item android:color="#CDCECE" />
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/color/default_text_color.xml -->
+</selector>

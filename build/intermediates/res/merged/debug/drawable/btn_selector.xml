@@ -4,4 +4,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/btn_press" />
     <item android:state_enabled="false" android:drawable="@drawable/btn_press" />
     <item android:drawable="@drawable/btn_unpress" />
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/btn_selector.xml -->
+</selector>

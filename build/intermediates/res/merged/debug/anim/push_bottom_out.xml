@@ -7,4 +7,4 @@
         android:duration="200"
         android:fromYDelta="0"
         android:toYDelta="50%p" />
-</set><!-- From: file:/E:/studio-work-space/fenqipai/res/anim/push_bottom_out.xml -->
+</set>

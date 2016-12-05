@@ -26,4 +26,4 @@
         android:scrollbars="none" >
     </com.fenqipai.fenqipaiandroid.view.refresh.PullToRefreshListView>
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_staging_bill.xml -->
+</LinearLayout>

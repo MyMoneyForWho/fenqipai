@@ -76,4 +76,4 @@
         android:background="@color/service_line_color"
         android:layout_alignParentBottom="true" />
 
-</RelativeLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/common_title_bar.xml -->
+</RelativeLayout>

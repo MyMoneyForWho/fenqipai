@@ -4,4 +4,4 @@
 
     <corners android:radius="5dp" />
     <solid android:color="@color/white" />
-</shape><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/btn_bg_while_garden.xml -->
+</shape>

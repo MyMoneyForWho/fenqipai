@@ -21,4 +21,4 @@
         android:layout_marginRight="@dimen/margin_15dip"
         android:textColor="@color/car_detials_price_et" />
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/item_withdraw_bank_listview.xml -->
+</LinearLayout>

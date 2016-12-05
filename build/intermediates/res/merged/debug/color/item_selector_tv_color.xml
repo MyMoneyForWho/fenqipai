@@ -5,4 +5,4 @@
     <item android:state_pressed="false" android:color="@color/hint_color"/>
  
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/color/item_selector_tv_color.xml -->
+</selector>

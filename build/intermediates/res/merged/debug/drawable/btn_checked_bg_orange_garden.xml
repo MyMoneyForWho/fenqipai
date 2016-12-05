@@ -5,4 +5,4 @@
     <corners android:radius="5dp" />
     <solid android:color="@color/checked_btn" />
     
-</shape><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/btn_checked_bg_orange_garden.xml -->
+</shape>

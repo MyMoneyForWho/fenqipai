@@ -90,4 +90,4 @@
         android:layout_height="@dimen/margin_0.3dip"
         android:background="@color/gray_color_line" />
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/item_homefragment_news.xml -->
+</LinearLayout>

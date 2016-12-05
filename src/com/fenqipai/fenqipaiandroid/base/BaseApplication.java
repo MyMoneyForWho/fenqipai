@@ -83,7 +83,7 @@ public class BaseApplication extends Application {
 		initImageLoader();
 
 		// 在使用 SDK 各组间之前初始化 context 信息，传入 ApplicationContext
-//		SDKInitializer.initialize(this);
+		SDKInitializer.initialize(this);
 
 		// // 初始化异常处理类
 		// CrashHandler crashHandler = CrashHandler.getInstance();

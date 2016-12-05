@@ -108,4 +108,4 @@
         android:textColor="@color/white_color"
         android:textSize="@dimen/text_size_18sp" />
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/activity_change_name.xml -->
+</LinearLayout>

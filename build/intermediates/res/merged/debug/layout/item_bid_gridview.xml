@@ -13,4 +13,3 @@
     android:textColor="@color/white_color"
     android:textSize="@dimen/text_size_14sp"
     android:text="1000"/>
-<!-- From: file:/E:/studio-work-space/fenqipai/res/layout/item_bid_gridview.xml -->

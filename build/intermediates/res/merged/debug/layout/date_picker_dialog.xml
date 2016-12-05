@@ -18,4 +18,4 @@
         android:layout_height="wrap_content"
         android:calendarViewShown="false" />
 
-</LinearLayout><!-- From: file:/E:/studio-work-space/fenqipai/res/layout/date_picker_dialog.xml -->
+</LinearLayout>

@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/ico3_normal" android:state_checked="false"></item>
     <item android:drawable="@drawable/ico3_checked" android:state_checked="true"></item>
 
-</selector> <!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/tab_selector_community.xml -->
+</selector> 

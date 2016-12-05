@@ -7,4 +7,4 @@
     <item android:drawable="@drawable/btn_choose_off" android:state_checked="false"/>
     <item android:drawable="@drawable/btn_choose_off"/>
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/checkbox_style_location.xml -->
+</selector>

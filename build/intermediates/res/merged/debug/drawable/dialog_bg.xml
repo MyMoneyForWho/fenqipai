@@ -3,4 +3,4 @@
 
 	<corners android:radius="5dp" />
 	<solid android:color="@color/background_color" />
-</shape><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/dialog_bg.xml -->
+</shape>

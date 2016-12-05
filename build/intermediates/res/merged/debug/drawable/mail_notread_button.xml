@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/message_new_on" android:state_pressed="true"/>
     <item android:drawable="@drawable/mail_red"/>
 
-</selector><!-- From: file:/E:/studio-work-space/fenqipai/res/drawable/mail_notread_button.xml -->
+</selector>
