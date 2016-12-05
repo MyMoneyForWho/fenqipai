@@ -84,20 +84,20 @@
             android:value="VIVO" />
 
         <!-- Required  SDK核心功能 -->
-        <service
-            android:name="cn.jpush.android.service.DownloadService"
-            android:enabled="true"
-            android:exported="false" >
-        </service>
+        <!--<service-->
+            <!--android:name="cn.jpush.android.service.DownloadService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="false" >-->
+        <!--</service>-->
         <service android:name="com.fenqipai.fenqipaiandroid.service.UpdateService" >
         </service>
         <service android:name="com.fenqipai.fenqipaiandroid.service.MqttService" >
         </service>
 
         <!-- Required SDK核心功能 -->
-        <receiver
-            android:name="cn.jpush.android.service.AlarmReceiver"
-            android:exported="false" />
+        <!--<receiver-->
+            <!--android:name="cn.jpush.android.service.AlarmReceiver"-->
+            <!--android:exported="false" />-->
 
         <!-- User defined.  For test only  用户自定义的广播接收器 -->
         <receiver
@@ -264,18 +264,6 @@
             android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
         <activity
-            android:name="com.fenqipai.fenqipaiandroid.MyAccountActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoTitle" >
-        </activity>
-        <activity
-            android:name="com.fenqipai.fenqipaiandroid.MyBalanceActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoTitle" >
-        </activity>
-        <activity
             android:name="com.fenqipai.fenqipaiandroid.RechargeActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
@@ -283,18 +271,6 @@
         </activity>
         <activity
             android:name="com.fenqipai.fenqipaiandroid.PayConfirmActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoTitle" >
-        </activity>
-        <activity
-            android:name="com.fenqipai.fenqipaiandroid.WithDrawActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoTitle" >
-        </activity>
-        <activity
-            android:name="com.fenqipai.fenqipaiandroid.WithDrawSuccessActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoTitle" >
@@ -342,12 +318,6 @@
             android:theme="@style/NoTitle" >
         </activity>
         <activity
-            android:name="com.fenqipai.fenqipaiandroid.AccountSecurityActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoTitle" >
-        </activity>
-        <activity
             android:name="com.fenqipai.fenqipaiandroid.ChangeLoginPasswordActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
@@ -360,24 +330,11 @@
             android:theme="@style/NoTitle" >
         </activity>
         <activity
-            android:name="com.fenqipai.fenqipaiandroid.PayFailActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoTitle" >
-        </activity>
-        <activity
             android:name="com.fenqipai.fenqipaiandroid.PayStagingActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/NoTitle" >
         </activity>
-        <activity
-            android:name="com.fenqipai.fenqipaiandroid.PayRentActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoTitle" >
-        </activity>
-
         <!-- 银联支付 -->
         <activity
             android:name="com.unionpay.uppay.PayActivity"
